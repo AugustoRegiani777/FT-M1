@@ -80,8 +80,80 @@ function selectionSort(array) {
   return array;
 
 }
+/*
+let playerOneCards = [100,1]
+let playerTwoCards = [10,1]
+
+    
+
+var cardGame = function(playerOneCards, playerTwoCards){
+    // Tu código aca:
+    let playerOneCastle = 100
+    let playerTwoCastle = 100
+
+    for (let i = 0; i < playerOneCards.length; i + 2) {
+        let arrOne = [playerOneCards.shift(), playerOneCards.shift()]
+        let arrTwo = [playerTwoCards.shift(), playerTwoCards.shift()]
+        
+        
+        if (arrOne[i] > arrTwo[i + 1]) {
+            playerTwoCastle += arrTwo[i+1] - arrOne[i]
+        }
+        
+        if (arrTwo[i] > arrOne[i+1]) {
+            playerOneCastle += arrOne[i+1] - arrTwo[i]
+        }   
+
+        if(playerOneCastle <= 0 && playerTwoCastle > 0) return "PLAYER TWO"
+        if(playerTwoCastle <= 0 && playerOneCastle > 0) return "PLAYER ONE"
+        if(playerTwoCastle <= 0 && playerOneCastle <= 0) return "TIE"
+    }
+    if (playerTwoCards.length === 0){
+      
+        if(playerOneCastle < playerTwoCastle) return "PLAYER TWO"
+        if(playerTwoCastle < playerOneCastle) return "PLAYER ONE"
+        if(playerTwoCastle ===  playerOneCastle) return "TIE"
+    }
+}
+
+console.log(cardGame(playerOneCards,playerTwoCards))
+
+//---------------Closures-------------------
+
+// EJERCICIO 10
+// Implementar la función closureDetect que recibe como parámetro:
+//  - Un array (symptoms) que va a contener en cada posición un string representando un
+//    síntoma médico de alguna enfermedad
+//  - Un número (min) que va a indicar la cantidad mínima de síntomas que debe tener un
+//    paciente para considerar que posee la enfermedad
+// Ejemplo:
+//  var symptoms = ['fever', 'dry cough', 'tiredness', 'sore throat', 'diarrhoea', 'loss of taste', 'loss of
+//  smell'];
+//  var covidDetector = closureDetect(symptoms, 3);
+//  
+//  var personOne = {
+//    name: 'Franco',
+//    age: 26,
+//    symptoms: ['fever', 'congestion', 'loss of taste', 'tiredness']
+// }
+//
+//  var personTwo = {
+//    name: 'Toni',
+//    age: 30,
+//    symptoms: ['congestion', 'tiredness']
+// }
+//
+//    covidDetector(personOne); --> true
+//    covidDetector(personTwo); --> false
+//    [Observar los tests para otros casos]
+
+function closureDetect(symptoms, min) {
+    // Tu código aca:
 
 
+    
+}
+/**/
 // No modificar nada debajo de esta línea
 // --------------------------------
 
